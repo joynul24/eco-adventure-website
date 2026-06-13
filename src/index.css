@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @plugin "daisyui"; */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #fafaf9;
+  color: #1e293b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Swiper Custom Styles */
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.7) !important;
+    opacity: 0.7 !important;
+    transition: all 0.3s ease;
+}
+.swiper-pagination-bullet-active {
+    background: #0d9488 !important; /* teal-600 */
+    opacity: 1 !important;
+    width: 24px !important;
+    border-radius: 4px !important;
+}
+
+/* Ensure dynamic bullet active state looks good */
+.swiper-pagination-bullet-active-main {
+    background: #0d9488 !important;
+}
