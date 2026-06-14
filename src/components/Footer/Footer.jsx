@@ -38,9 +38,9 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-teal-600 transition-colors"><LuFacebook size={24} /></a>
+            <a href="https://web.facebook.com/devjoynul" className="hover:text-teal-600 transition-colors"><LuFacebook size={24} /></a>
             <a href="#" className="hover:text-teal-600 transition-colors"><LuTwitter size={24} /></a>
-            <a href="#" className="hover:text-teal-600 transition-colors"><LuInstagram size={24} /></a>
+            <a href="https://www.instagram.com/devjoynul/" className="hover:text-teal-600 transition-colors"><LuInstagram size={24} /></a>
             <a href="#" className="hover:text-teal-600 transition-colors"><LuYoutube size={24} /></a>
           </div>
         </div>
